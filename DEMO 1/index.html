@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12385b">
+  <title>Planning | Censight</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-lockup">
+        <div class="brand-mark" aria-hidden="true"><span></span><span></span></div>
+        <div class="brand-name">HUMAN<br>CONNECTIONS<br>MEDIA</div>
+      </div>
+
+      <nav class="global-nav" aria-label="Navegaci&oacute;n global">
+        <div class="nav-section-label">GENERAL</div>
+        <a class="global-nav-link" href="#" data-toast="Home est&aacute; disponible en HCM Core">
+          <span class="icon icon-grid" aria-hidden="true"></span>
+          <span>Home</span>
+        </a>
+        <div class="nav-section-label intelligence-label">INTELIGENCIA</div>
+        <a class="global-nav-link is-selected" href="#planning">
+          <span class="icon icon-users" aria-hidden="true"></span>
+          <strong>CENSIGHT</strong>
+        </a>
+        <div class="nav-section-label system-label">SISTEMA</div>
+        <a class="global-nav-link" href="#" data-toast="El centro de ayuda estar&aacute; disponible pronto">
+          <span class="icon icon-help" aria-hidden="true">?</span>
+          <span>Centro de ayuda</span>
+        </a>
+      </nav>
+
+      <div class="help-card card rounded shadow">
+        <div class="help-icon">?</div>
+        <strong>&iquest;Necesitas ayuda?</strong>
+        <p>Consulta las gu&iacute;as de HCM Core para sacar el m&aacute;ximo provecho a tus planes.</p>
+        <a href="#" data-toast="Abriendo el centro de ayuda">Visitar centro de ayuda <span aria-hidden="true">&#8599;</span></a>
+      </div>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="mobile-menu" id="mobileMenu" type="button" aria-label="Abrir navegaci&oacute;n"><span></span><span></span><span></span></button>
+          <button class="back-button" type="button" aria-label="Volver" data-toast="Volviendo a Censight"><span>&lsaquo;</span></button>
+          <div class="breadcrumbs">
+            <a href="#" data-toast="HCM Core">HCM Core</a>
+            <span>/</span>
+            <span class="breadcrumb-current">CENSIGHT</span>
+          </div>
+        </div>
+        <div class="topbar-right">
+          <div class="project-picker">
+            <span class="project-picker-label">Proyecto</span>
+            <div class="project-switcher">
+              <button class="project-trigger" id="projectTrigger" type="button" aria-expanded="false">
+                <span>CENSIGHT</span><span class="chevron" aria-hidden="true"></span>
+              </button>
+              <div class="project-menu" id="projectMenu">
+                <div class="project-menu-label">Seleccionar proyecto</div>
+                <button class="project-option is-current" type="button" data-project="Censight">
+                  <span class="project-dot"></span><span>Censight</span><span class="check">&#10003;</span>
+                </button>
+                <button class="project-option project-child" type="button" data-project="Planning">
+                  <span class="project-dot planning-dot"></span><span>Planning</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="environment-pill"><span class="status-dot"></span> Entorno demo</div>
+          <button class="profile-button" type="button" aria-label="Abrir men&uacute; de usuario">HC</button>
+          <span class="profile-chevron" aria-hidden="true"></span>
+        </div>
+      </header>
+
+      <main class="main-content" id="planning">
+        <section class="page-heading">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-square"></span> INTELIGENCIA DE DATOS</div>
+            <h1>Planning</h1>
+            <p class="page-subtitle">Dise&ntilde;a, compara y optimiza tus planes de medios en un solo lugar.</p>
+          </div>
+          <div class="heading-actions">
+            <button class="button button-secondary" id="exportButton" type="button">
+              <span class="button-icon document-icon" aria-hidden="true"></span> Exportar reporte PPT
+            </button>
+            <button class="button button-primary" id="newAnalysisButton" type="button">
+              <span class="plus-icon" aria-hidden="true">+</span> Nuevo An&aacute;lisis
+            </button>
+          </div>
+        </section>
+
+        <div class="content-layout">
+          <aside class="insights-panel card rounded shadow" aria-label="Settings &amp; Insights">
+            <div class="panel-tabs" role="tablist">
+              <button class="panel-tab is-active" data-tab="settings" role="tab" type="button">Settings &amp; Insights</button>
+              <button class="panel-tab" data-tab="media" role="tab" type="button">Media Plans</button>
+            </div>
+            <div class="side-menu" id="settingsMenu" role="tabpanel">
+              <div class="side-group first-group">
+                <div class="side-group-title"><span class="menu-chevron is-open"></span><span class="tiny-pencil"></span> Brief</div>
+                <button class="side-item is-current" type="button"><span class="item-icon campaign-icon"></span>Campaign</button>
+                <button class="side-item" type="button" data-toast="Audiences se integrar&aacute; en el siguiente sprint"><span class="item-icon audience-icon"></span>Audiences</button>
+                <button class="side-item" type="button" data-toast="Audience Explorer se integrar&aacute; en el siguiente sprint"><span class="item-icon explorer-icon"></span>Audience Explorer</button>
+                <button class="side-item" type="button" data-toast="Task Profile se integrar&aacute; en el siguiente sprint"><span class="item-icon task-icon"></span>Task Profile</button>
+                <button class="side-item" type="button" data-toast="Tactics se integrar&aacute; en el siguiente sprint"><span class="item-icon tactics-icon"></span>Tactics</button>
+                <button class="side-item" type="button" data-toast="Channel Inputs se integrar&aacute; en el siguiente sprint"><span class="item-icon channel-icon"></span>Channel Inputs</button>
+                <button class="side-item" type="button" data-toast="Budget Setting se integrar&aacute; en el siguiente sprint"><span class="item-icon budget-icon"></span>Budget Setting</button>
+              </div>
+              <div class="side-group">
+                <div class="side-group-title"><span class="group-symbol">◉</span> Channel Reach</div>
+                <button class="side-item" type="button" data-toast="Media Consumption se integrar&aacute; en el siguiente sprint"><span class="item-icon media-icon"></span>Media Consumption</button>
+                <button class="side-item" type="button" data-toast="Reach Calibration se integrar&aacute; en el siguiente sprint"><span class="item-icon reach-icon"></span>Reach Calibration</button>
+                <button class="side-item" type="button" data-toast="Maximum Reach se integrar&aacute; en el siguiente sprint"><span class="item-icon max-icon"></span>Maximum Reach</button>
+                <button class="side-item" type="button" data-toast="Reach Curve se integrar&aacute; en el siguiente sprint"><span class="item-icon curve-icon"></span>Reach Curve</button>
+              </div>
+              <div class="side-group">
+                <div class="side-group-title"><span class="group-symbol planning-symbol">&#9707;</span> Planning Insights</div>
+                <button class="side-item" type="button" data-toast="Channel Ranking se integrar&aacute; en el siguiente sprint"><span class="item-icon ranking-icon"></span>Channel Ranking</button>
+                <button class="side-item" type="button" data-toast="Channel Plot se integrar&aacute; en el siguiente sprint"><span class="item-icon plot-icon"></span>Channel Plot</button>
+                <button class="side-item" type="button" data-toast="Effect Curve se integrar&aacute; en el siguiente sprint"><span class="item-icon curve-icon"></span>Effect Curve</button>
+                <button class="side-item" type="button" data-toast="Response Curve se integrar&aacute; en el siguiente sprint"><span class="item-icon response-icon"></span>Response Curve</button>
+                <button class="side-item" type="button" data-toast="Multi Channel Curve se integrar&aacute; en el siguiente sprint"><span class="item-icon response-icon"></span>Multi Channel Curve</button>
+              </div>
+            </div>
+            <div class="side-menu media-menu is-hidden" id="mediaMenu" role="tabpanel">
+              <div class="media-empty-state">
+                <span class="empty-icon"></span>
+                <strong>Media Plans</strong>
+                <p>Los planes de medios aparecer&aacute;n aqu&iacute; cuando se cree un nuevo an&aacute;lisis.</p>
+                <button class="text-button" type="button" data-action="new-analysis">+ Crear primer plan</button>
+              </div>
+            </div>
+          </aside>
+
+          <section class="dashboard-area" aria-label="Resumen de Planning">
+            <div class="campaign-context card rounded shadow">
+              <div class="context-mark"><span class="context-grid"></span></div>
+              <div class="context-copy">
+                <div class="context-kicker">AN&Aacute;LISIS ACTIVO</div>
+                <h2>Prueba Aleph</h2>
+                <p>Configuraci&oacute;n aplicada al plan seleccionado.</p>
+              </div>
+              <div class="context-fields">
+                <div class="context-field"><span>Periodo</span><strong>01 Jun - 31 Jul 2025</strong></div>
+                <div class="context-field"><span>Objetivo</span><strong>Alcance incremental</strong></div>
+                <div class="context-field"><span>Mercado</span><strong>M&eacute;xico</strong></div>
+              </div>
+              <button class="edit-link" type="button" data-toast="Editar par&aacute;metros del an&aacute;lisis"><span class="edit-icon"></span> Editar par&aacute;metros</button>
+            </div>
+
+            <div class="kpi-grid">
+              <div class="card rounded shadow kpi-card">
+                <div class="kpi-label">INVERSI&Oacute;N PLANEADA</div>
+                <div class="kpi-value">$4.8M</div>
+                <div class="kpi-foot">Presupuesto total asignado</div>
+              </div>
+              <div class="card rounded shadow kpi-card">
+                <div class="kpi-label">ALCANCE PROYECTADO</div>
+                <div class="kpi-value">8.6M</div>
+                <div class="kpi-foot">Personas alcanzadas</div>
+              </div>
+              <div class="card rounded shadow kpi-card">
+                <div class="kpi-label">FRECUENCIA</div>
+                <div class="kpi-value">3.8<span class="kpi-unit">x</span></div>
+                <div class="kpi-foot">Exposiciones promedio</div>
+              </div>
+              <div class="card rounded shadow kpi-card">
+                <div class="kpi-label">EFICIENCIA DEL PLAN</div>
+                <div class="kpi-value">82<span class="kpi-unit">%</span></div>
+                <div class="kpi-foot"><span class="trend-up">&#8593; 6.4%</span> vs. plan anterior</div>
+              </div>
+            </div>
+
+            <div class="charts-grid">
+              <article class="card rounded shadow chart-card allocation-card">
+                <div class="card-header-line">
+                  <div>
+                    <h3>Distribuci&oacute;n de inversi&oacute;n</h3>
+                    <p>Participaci&oacute;n del presupuesto por canal.</p>
+                  </div>
+                  <button class="more-button" type="button" aria-label="M&aacute;s opciones" data-toast="M&aacute;s opciones de distribuci&oacute;n">&#8942;</button>
+                </div>
+                <div class="allocation-content">
+                  <div class="donut-chart" aria-label="Distribuci&oacute;n: Video 38%, Social 27%, Display 20%, Audio 15%">
+                    <div class="donut-center"><strong>100%</strong><span>Total</span></div>
+                  </div>
+                  <div class="legend-list">
+                    <div class="legend-row"><span class="legend-color color-video"></span><span>Video</span><strong>38%</strong><small>$1.82M</small></div>
+                    <div class="legend-row"><span class="legend-color color-social"></span><span>Social</span><strong>27%</strong><small>$1.30M</small></div>
+                    <div class="legend-row"><span class="legend-color color-display"></span><span>Display</span><strong>20%</strong><small>$0.96M</small></div>
+                    <div class="legend-row"><span class="legend-color color-audio"></span><span>Audio</span><strong>15%</strong><small>$0.72M</small></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="card rounded shadow chart-card reach-card">
+                <div class="card-header-line">
+                  <div>
+                    <h3>Alcance y frecuencia</h3>
+                    <p>Proyecci&oacute;n acumulada del plan seleccionado.</p>
+                  </div>
+                  <button class="more-button" type="button" aria-label="M&aacute;s opciones" data-toast="M&aacute;s opciones de alcance">&#8942;</button>
+                </div>
+                <div class="chart-summary"><strong>8.6M</strong><span><i></i> alcance proyectado</span></div>
+                <div class="line-chart" aria-label="Gr&aacute;fica de alcance proyectado">
+                  <div class="y-label y-top">10M</div><div class="y-label y-middle">5M</div><div class="y-label y-bottom">0</div>
+                  <div class="grid-line line-top"></div><div class="grid-line line-middle"></div><div class="grid-line line-bottom"></div>
+                  <svg viewBox="0 0 560 130" preserveAspectRatio="none" role="img" aria-hidden="true">
+                    <defs><linearGradient id="reachFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#3470ea" stop-opacity=".22"/><stop offset="1" stop-color="#3470ea" stop-opacity="0"/></linearGradient></defs>
+                    <path class="chart-fill" d="M0,111 C34,108 40,94 72,96 S111,82 139,83 S179,61 209,68 S247,55 278,59 S320,38 350,45 S385,29 418,35 S462,18 490,25 S530,10 560,13 L560,130 L0,130 Z"></path>
+                    <path class="chart-line" d="M0,111 C34,108 40,94 72,96 S111,82 139,83 S179,61 209,68 S247,55 278,59 S320,38 350,45 S385,29 418,35 S462,18 490,25 S530,10 560,13"></path>
+                    <circle cx="418" cy="35" r="4" class="chart-point"></circle>
+                  </svg>
+                  <div class="x-labels"><span>Semana 1</span><span>Semana 2</span><span>Semana 3</span><span>Semana 4</span><span>Semana 5</span><span>Semana 6</span></div>
+                </div>
+              </article>
+            </div>
+
+            <article class="card rounded shadow table-card">
+              <div class="card-header-line table-header">
+                <div><h3>Resumen por canal</h3><p>Estimaciones del plan de medios actual.</p></div>
+                <button class="button button-small" type="button" data-toast="Descargando detalle del plan"><span class="download-icon"></span> Descargar detalle</button>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Canal</th><th>Inversi&oacute;n</th><th>Alcance</th><th>Frecuencia</th><th>CPM</th><th>Estado</th></tr></thead>
+                  <tbody>
+                    <tr><td><span class="channel-bullet video-bullet"></span>Video</td><td>$1,824,000</td><td>4.2M</td><td>2.9x</td><td>$43.60</td><td><span class="status-badge">Optimizado</span></td></tr>
+                    <tr><td><span class="channel-bullet social-bullet"></span>Social</td><td>$1,296,000</td><td>3.8M</td><td>3.6x</td><td>$34.10</td><td><span class="status-badge">Optimizado</span></td></tr>
+                    <tr><td><span class="channel-bullet display-bullet"></span>Display</td><td>$960,000</td><td>2.9M</td><td>2.4x</td><td>$33.10</td><td><span class="status-badge status-review">En revisi&oacute;n</span></td></tr>
+                    <tr><td><span class="channel-bullet audio-bullet"></span>Audio</td><td>$720,000</td><td>1.7M</td><td>1.8x</td><td>$42.35</td><td><span class="status-badge">Optimizado</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+
+            <footer class="dashboard-footer"><span><span class="footer-dot"></span> Datos actualizados hace 12 min</span><span>Technical notes <span class="info-circle">i</span></span></footer>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop" id="analysisModal" aria-hidden="true">
+    <div class="modal-card card rounded shadow" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Cerrar">&times;</button>
+      <div class="modal-icon"><span class="plus-icon">+</span></div>
+      <h2 id="modalTitle">Nuevo an&aacute;lisis</h2>
+      <p>Inicia una nueva configuraci&oacute;n para comparar escenarios de inversi&oacute;n y alcance.</p>
+      <label for="analysisName">Nombre del an&aacute;lisis</label>
+      <input id="analysisName" type="text" value="Plan de verano 2025" autocomplete="off">
+      <div class="modal-actions"><button class="button button-secondary" id="modalCancel" type="button">Cancelar</button><button class="button button-primary" id="modalCreate" type="button">Crear an&aacute;lisis</button></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

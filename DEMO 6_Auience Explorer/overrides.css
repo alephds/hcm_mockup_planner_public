@@ -1,0 +1,5 @@
+.interest-row:nth-child(1) .interest-track span { width:78% !important; }
+.interest-row:nth-child(2) .interest-track span { width:65% !important; }
+.interest-row:nth-child(3) .interest-track span { width:54% !important; }
+.interest-row:nth-child(4) .interest-track span { width:46% !important; }
+.interest-row:nth-child(5) .interest-track span { width:39% !important; }
